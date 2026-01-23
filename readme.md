@@ -204,4 +204,9 @@ Once rendering is complete, the generated orthographic images will be available 
 
 ## Acknowledgements
 
-Our code is inspired by  .
+Our code is inspired by:
+* **[3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)** 
+
+* **[GLOMAP](https://github.com/colmap/glomap)** 
+
+* **[BlockGaussian](https://github.com/SunshineWYC/BlockGaussian)** 
