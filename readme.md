@@ -134,11 +134,15 @@ python scene_partition.py -c ./configs/scene_name.yaml
 
 Manually select the area in the pop-up window, and press Enter to close the path.
 
-![Interactive_Select_Scene_ROI_Region.png](https://cdn.nlark.com/yuque/0/2026/png/52102112/1768121282801-c6819300-965a-4d95-8d27-390d4fedab60.png?x-oss-process=image%2Fformat%2Cwebp)
+![](fig/1.png)
 
-The Region of Interest (ROI) and scene segmentation information will be exported to the output folder .
+The Region of Interest (ROI) and scene segmentation information will be exported to the output folder.
 
-<img src="https://cdn.nlark.com/yuque/0/2026/png/52102112/1768121527342-4965164b-588a-4731-9c4b-0e6509ff70fe.png?x-oss-process=image%2Fformat%2Cwebp" alt="ROI_region.png" style="zoom:50%;" /><img src="https://cdn.nlark.com/yuque/0/2026/png/52102112/1768121527387-d9205b0f-3be9-4030-b2c2-f5249a46376b.png?x-oss-process=image%2Fformat%2Cwebp" alt="Partition_Results.png" style="zoom:50%;" />
+
+![](fig/2.png)
+
+![](fig/3.png)
+
 
 ## 6.Training
 
@@ -183,7 +187,7 @@ pip install submodules/diff-gaussian-rasterization
 
 5.Set the image resolution via the `image_scale` parameter in the `scene_name.yaml` configuration file. The displayed scene size can be adjusted by setting the `top` value in the `getProjectionMatrixCUDA` method within `utils/graphics_utils.py`，The larger the ﻿top﻿ value, the larger the visible area of the scene.
 
-![2515f215ad3fa0b5ef361eaf09c35d39.png](https://cdn.nlark.com/yuque/0/2026/png/52102112/1768128970640-775d5021-4e31-4ec6-9c28-4ccda89ddbbb.png?x-oss-process=image%2Fformat%2Cwebp)
+![](fig/4.png)
 
 6.Perform orthographic rendering.  
 
@@ -194,3 +198,10 @@ python render_views.py -o ./output/scene_name
 Once rendering is complete, the generated orthographic images will be available in `output/scene_name/render`. Simply select the one that provides full coverage and the best visual quality.
  If you want to continue training on other datasets, simply change the parameter ﻿`orthographic=True`﻿ to ﻿`False`﻿ and recompile; then, you can proceed with training using perspective projection.  
 
+## Citation
+
+
+
+## Acknowledgements
+
+Our code is inspired by  .
